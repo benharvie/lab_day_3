@@ -3,18 +3,11 @@ def add_array_lengths(array_1, array_2)
 end
 
 def sum_array(numbers)
-  total = 0
-  numbers.each { |number| total += number }
-  return total
+  return numbers.sum
 end
 
 def find_item(array, item)
-  #array.each { |house_name| return true if house_name == item }
-  for house in array
-    if house == item
-      return true
-    end
-  end
+  array.each { |house_name| return true if house_name == item }
   return false
 end
 
